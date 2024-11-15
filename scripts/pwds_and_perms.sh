@@ -6,7 +6,7 @@ unhide brute proc procall procfs quick reverse sys
 
 #File permission stuff
 #apt-get install --reinstall ~ #Will re-install all packages
-#chmod 640 /etc/shadow #From TR2 CPXVII
+chmod 640 /etc/shadow #From TR2 CPXVII
 
 #Remove root login from ssh
 sed 's/#PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config

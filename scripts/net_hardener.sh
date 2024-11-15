@@ -31,5 +31,3 @@ sysctl -w net.ipv6.conf.all.accept_redirects=0
 sysctl -w net.ipv6.conf.all.accept_source_route=0
 sysctl -w net.ipv6.conf.default.accept_redirects=0
 sysctl -w net.ipv6.conf.default.accept_source_route=0
-
-sudo ss -tlnp
