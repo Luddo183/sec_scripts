@@ -1,9 +1,13 @@
 #!/bin/bash
 
 #Set up UFW
-sudo apt install ufw
-sudo ufw allow OpenSSH #Make sure SSH can run
-sudo ufw enable #Enable UFW
+ufw --force reset
+ufw default deny incoming
+ufw default allow outgoing
+# Uncomment the following line if SSH access is needed
+# ufw allow OpenSSH
+ufw --force enable
+ufw logging on
 
 sysctl -w kernel.core_uses_pid=1
 sysctl -w kernel.ctrl-alt-del=0
